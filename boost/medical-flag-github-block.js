@@ -1,5 +1,10 @@
 const got = require('got');
 
+// If Boost cannot pass these as API connector inputs, set them here in Boost.
+// Do not commit a real token to GitHub.
+const GITHUB_OWNER = '';
+const GITHUB_TOKEN = '';
+
 module.exports = async (data, logger, callback) => {
   function pad2(value) {
     return String(value).padStart(2, '0');
@@ -113,14 +118,20 @@ module.exports = async (data, logger, callback) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  const githubOwner = firstString([data.request?.github_owner]);
+  const githubOwner = firstString([
+    data.request?.github_owner,
+    GITHUB_OWNER
+  ]);
   const githubRepo =
     firstString([data.request?.github_repo]) || 'medical-flags';
   const githubBranch =
     firstString([data.request?.github_branch]) || 'main';
   const githubEventsPath =
     firstString([data.request?.github_events_path]) || 'events.json';
-  const githubToken = firstString([data.request?.github_token]);
+  const githubToken = firstString([
+    data.request?.github_token,
+    GITHUB_TOKEN
+  ]);
 
   const flag = firstString([
     data.request?.flag,
