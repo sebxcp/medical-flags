@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "timestamp": "2026-08-04 15:57:38",
+    "flag": "medical_concern",
+    "session_id": 1004196,
+    "dialog_id": "9d31b1e8-0a7c-4669-aa8e-c54d08b79f7e"
+  }
+]
