@@ -22,5 +22,11 @@
     "flag": "medical_concern",
     "session_id": 1004312,
     "dialog_id": "99bd8f0c-62d0-49f0-9c1f-50f620a0a758"
+  },
+  {
+    "timestamp": "2026-08-06 11:29:14",
+    "flag": "medical_concern",
+    "session_id": 1004314,
+    "dialog_id": "36a8dbe0-73b8-454b-9829-c2e3a4c52e95"
   }
 ]
