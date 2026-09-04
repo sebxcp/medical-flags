@@ -400,5 +400,11 @@
     "flag": "medical_concern",
     "session_id": 1045966,
     "dialog_id": "d2048be5-bf27-48f3-ba3a-741616413190"
+  },
+  {
+    "timestamp": "2026-09-04 10:58:57",
+    "flag": "medical_concern",
+    "session_id": 1045990,
+    "dialog_id": "7a995b54-af91-4f98-af30-4a866c21a901"
   }
 ]
